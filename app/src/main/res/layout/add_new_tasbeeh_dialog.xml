@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtAddNewTasbeeh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add New Tasbeeh"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/tasbeehInHand"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_gravity="end"
+        android:src="@drawable/tasbeeh_inhand" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_8sdp">
+
+        <TextView
+            android:id="@+id/txtNameOfTasbeeh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="Name of Tasbeeh"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_20ssp" />
+
+        <EditText
+            android:id="@+id/edtNameOfTasbeeh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter name of tasbeeh"
+            android:textSize="@dimen/_16ssp" />
+
+        <TextView
+            android:id="@+id/txtCountsOfTasbeeh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:inputType="text"
+            android:text="Counts Of Tasbeeh"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_20ssp" />
+
+        <EditText
+            android:id="@+id/edtCountsOfTasbeeh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1000"
+            android:inputType="number"
+            android:textSize="@dimen/_16ssp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50ssp"
+        android:text="Continue"
+        android:textAllCaps="false" />
+
+
+</LinearLayout>
